@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+	<Element name= "menuTopPage">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@id='toolbar']//button[contains(.,'{0}')]</value>
+	</Element>
+	<Element name= "txbSearch">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//input[@id='filter_search']</value>
+	</Element>
+	<Element name= "iconSearch">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@id='j-main-container']//button[@aria-label='Search']</value>
+	</Element>
+	<Element name= "txtNameBannersDisplay">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//table//a[normalize-space(text())='{0}']/ancestor::tr</value>
+	</Element>
+	
+	<Element name= "txbChooseNumber">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@id='list_limit_chzn']//li[normalize-space(text())='{0}']</value>
+	</Element>
+	<Element name= "txtMessageDisplay">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@class='alert alert-success']//div[normalize-space(text())='{0}']</value>
+	</Element>
+	<Element name= "checkNameBanners">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//table[@id='articleList']//td//a[normalize-space(text())='{0}']</value>
+	</Element>
+	<Element name= "checkCategory">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//table[@id='articleList']//td//a[normalize-space(text())='{0}']/following-sibling::div[normalize-space(text())='Category: {1}']</value>
+	</Element>
+	<Element name= "checkCliend">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//table[@id='articleList']//td//a[normalize-space(text())='{0}']//ancestor::td//following::td[normalize-space(text())='{1}']</value>
+	</Element>
+	<Element name= "checkStatus">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//table[@id='articleList']//td//a[normalize-space(text())='{0}']//ancestor::td/preceding::td/div[@class='btn-group']//span[@class='icon-{1}']</value>
+	</Element>
+	<Element name= "txbSearch">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//input[@id='filter_search']</value>
+	</Element>
+	<Element name= "txbCheckbox">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//table[@id='articleList']//td//a[normalize-space(text())='{0}']//ancestor::td/preceding-sibling::td/input</value>
+	</Element>
+	<Element name= "btnSearchTool">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@class='btn-wrapper hidden-phone']/button</value>
+	</Element>
+	<Element name= "dlSelectStatus">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@id='filter_published_chzn']//li[contains(text(),'{0}')]</value>
+	</Element>
+	<Element name= "btnHelp">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@id='toolbar-help']/button</value>
+	</Element>
+	<Element name= "selectFiled">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@id='j-main-container']//a[contains(.,'Select {0}')]</value>
+	</Element>
+	<Element name= "dlSelectClient">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@id='filter_client_id_chzn']//li[contains(text(),'{0}')]</value>
+	</Element>
+	<Element name= "dlSelectCategory">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@id='filter_category_id_chzn']//li[contains(text(),'{0}')]</value>
+	</Element>
+	<Element name= "btnClear">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@id='j-main-container']//button[contains(text(),'Clear')]</value>
+	</Element>
+	<Element name= "checkIconLock">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//table[@id='articleList']//td//a[normalize-space(text())='{0}']/preceding-sibling::a</value>
+	</Element>
+	<Element name= "numberRow">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//table/tbody/tr</value>
+	</Element>
+	<Element name= "iconNextPage">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//a[@class='hasTooltip']/span[@class='icon-step-forward icon-next']</value>
+	</Element>
+	<Element name= "txtHearderId">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//th[contains(.,'ID')]/a</value>
+	</Element>
+	<Element name= "idBanners">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//table/tbody/tr[{0}]//td[@class='hidden-phone']</value>
+	</Element>
+	<Element name= "txbNumberDisplay">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@id='list_limit_chzn']//a</value>
+	</Element>
+	<Element name= "menuLeft">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//*[@id='submenu']//a[contains(text(),'{0}')]</value>
+	</Element>
+	<Element name= "txtMessage">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@id='system-message-container']//div[@class='alert-message']</value>
+	</Element>
+	<Element name= "txbInputNumberDisplay">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@id='list_limit_chzn']//input</value>
+	</Element>
+	//div[@id='list_limit_chzn']//input
+</properties>

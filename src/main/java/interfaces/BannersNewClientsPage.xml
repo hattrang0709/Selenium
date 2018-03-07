@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+
+	<Element name= "txbClientsName">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//input[@id='jform_name']</value>
+	</Element>
+	
+	<Element name= "txbContactName">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//input[@id='jform_contact']</value>
+	</Element>
+	
+	<Element name= "txbContactEmail">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//input[@id='jform_email']</value>
+	</Element>
+	
+	<Element name= "bttSave">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@id='toolbar-apply']/button</value>
+	</Element>
+	
+	<Element name= "bttMenuTop">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@id='toolbar']//button[contains(.,'{0}')]</value>
+	</Element>
+	
+	<Element name= "txtMessage">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@id='system-message-container']//div[@class='alert-message']</value>
+	</Element>
+	
+</properties>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+
+		<Element name= "menuTopPage">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@id='toolbar']//button[contains(.,'{0}')]</value>
+	</Element>
+	
+	<Element name= "txbSearch">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//input[@id='filter_search']</value>
+	</Element>
+	
+	<Element name= "txtMessageDisplay">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@class='alert alert-success']//div[normalize-space(text())='{0}']</value>
+	</Element>
+	
+	<Element name= "txtMessage">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@id='system-message-container']//div[@class='alert-message']</value>
+	</Element>
+	
+</properties>

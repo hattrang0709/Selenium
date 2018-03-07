@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+
+	<Element name= "menuControlPanel">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//li[@class='dropdown']/a[contains(.,'{0}')]</value>
+	</Element>
+	
+	<Element name= "dlMenu">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//ul[@id='menu']//li[contains(@class,'dropdown-submenu')]/a[contains(text(),'{0}')]</value>
+	</Element>
+	
+	<Element name= "menuLeft">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//ul[@id='nav-empty']/li[contains(.,'{0}')]</value>
+	</Element>
+	
+	<Element name= "menuLeft1">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//ul[@id='menu']/li[5]/ul/li[1]//li[contains(.,'{0}')]/a</value>
+	</Element>>
+</properties>

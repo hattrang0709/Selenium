@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" name="Failed suite [testng]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="common.Listeners"/>
+  </listeners>
+  <test name="testRun(failed)">
+    <parameter name="browser" value="ie"/>
+    <parameter name="timeout" value="15"/>
+    <parameter name="url" value="http://192.168.188.150/joomla/administrator/"/>
+    <classes>
+      <class name="testCase.TC_JOOMLA_ARTICLE_002_VerifyUserCanEditAnArticle">
+        <methods>
+          <include name="Login" invocation-numbers="0"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testCase.TC_JOOMLA_ARTICLE_002_VerifyUserCanEditAnArticle -->
+    </classes>
+  </test> <!-- testRun(failed) -->
+</suite> <!-- Failed suite [testng] -->

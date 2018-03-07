@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<propoty>
+	<Element name= "txbIdUser">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//input[@id='mod-login-username']</value>
+	</Element>
+	
+	<Element name= "txbPass">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//input[@id='mod-login-password']</value>
+	</Element>
+	
+	<Element name= "btnLogin">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@class='btn-group']/button</value>
+	</Element>
+	
+	<Element name= "btnUserProfile">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//li[@class='dropdown']/a[contains(.,'User Menu')]</value>
+	</Element>
+	
+	<Element name= "btnLogout">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//li[@class='dropdown open']//li[contains(.,'Logout')]</value>
+	</Element>
+	
+	<Element name= "btnBackHomepage">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@class ='container-fluid']//a[contains(@class,'admin')]</value>
+	</Element>
+	
+</propoty>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+
+	<Element name= "btnMenuTop">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@id='toolbar']//button[contains(.,'{0}')]</value>
+	</Element>
+	
+	<Element name= "txtNameBanners">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//input[@id='jform_name']</value>
+	</Element>
+	
+	<Element name= "dlCategory">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@id='jform_catid_chzn']/a</value>
+	</Element>
+	
+	<Element name= "filesDownListCategory">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//li[contains(text(),'{0}')]</value>
+	</Element>
+	
+	<Element name= "tabOfNew">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//ul[@id='myTabTabs']//a[contains(text(),'{0}')]</value>
+	</Element>
+	
+	<Element name= "txbClients">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@id='jform_cid_chzn']/a</value>
+	</Element>
+	
+	<Element name= "filedsDownListClient">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@id='jform_cid_chzn']//li[normalize-space(text())='{0}']</value>
+	</Element>
+	
+	<Element name= "btnSave">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@id='toolbar-apply']/button</value>
+	</Element>
+	
+	<Element name= "txtMessageDisplay">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@class='alert alert-success']//div[normalize-space(text())='{0}']</value>
+	</Element>
+	
+	<Element name= "lbStatus">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@id='jform_state_chzn']/a</value>
+	</Element>
+	
+	<Element name= "filedsDownListStatus">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@id='jform_state_chzn']//li[contains(text(),'{0}')]</value>
+	</Element>
+	
+	<Element name= "txtMessage">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@id='system-message-container']//div[@class='alert-message']</value>
+	</Element>
+	
+	<Element name= "txtMessageNotSave">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@id='system-message-container']/div</value>
+	</Element>
+	
+</properties>

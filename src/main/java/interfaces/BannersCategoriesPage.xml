@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+	<Element name= "btnMenuTop">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@id='toolbar']//button[contains(.,'{0}')]</value>
+	</Element>
+	
+	<Element name= "txbTitleCategories">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//input[@id='jform_title']</value>
+	</Element>
+	
+	<Element name= "txbTitleCategoriesDisplay">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//table//a[normalize-space(text())='{0}']//ancestor::tr</value>
+	</Element>
+	
+	<Element name= "txbNumberDisplay">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@id='list_limit_chzn']/a</value>
+	</Element>
+	
+	<Element name= "dlNumberDisplay">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@id='list_limit_chzn']//li[normalize-space(text())='{0}']</value>
+	</Element>
+	
+	<Element name= "txtMessageDisplay">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@class='alert alert-success']//div[normalize-space(text())='{0}']</value>
+	</Element>
+	
+	<Element name= "txbSearch">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//input[@id='filter_search']</value>
+	</Element>
+	
+	<Element name= "iconSearch">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@id='j-main-container']//button[@aria-label='Search']</value>
+	</Element>
+	
+	<Element name= "txtMessage">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@id='system-message-container']//div[@class='alert-message']</value>
+	</Element>
+	
+	</properties>

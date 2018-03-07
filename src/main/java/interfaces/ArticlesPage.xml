@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+	<Element name= "menuManageArticle">
+		<type>xpath</type>
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@id='toolbar']//button[contains(.,'{0}')]</value>
+	</Element>
+	
+	<Element name= "btnNew">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@id='toolbar-new']//button[contains(.,'New')]</value>
+	</Element>
+	
+	<Element name= "txbSearch">
+		<type>xpath</type>
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//input[@id='filter_search']</value>
+	</Element>
+	
+	<Element name= "btnSearch">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//button[@data-original-title='Search']</value>
+	</Element>
+	
+	<Element name= "btnClear">
+		<type>xpath</type>
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@id='j-main-container']//button[contains(text(),'Clear')]</value>
+	</Element>
+	
+	<Element name= "lbIdDescending">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@id='list_fullordering_chzn']/a[contains(.,'ID descending')]</value>
+	</Element>
+	
+	<Element name= "txbIdDescending">
+		<type>xpath</type>
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@id='list_fullordering_chzn']//input[@type='text']</value>
+	</Element>
+	
+	<Element name= "txtMessageSuccess">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[contains(text(),'{0}')]</value>
+	</Element>
+	
+	<Element name= "txtNameDislays">
+		<type>xpath</type>
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//table[@id='articleList']//tbody/tr[@class='row0']//td[@class='has-context']//preceding-sibling::div[contains(. ,'{0}')]</value>
+	</Element>
+	
+	<Element name= "btnNextDisable">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//ul[@class='pagination-list']//li[@class='disabled']/span</value>
+	</Element>
+	
+	<Element name= "btnSearchTools">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//button[contains(.,'Search Tools')]</value>
+	</Element>
+	
+	<Element name= "filedSelectOfSearchTools">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@id='filter_published_chzn']/a[contains(.,'{0}')]</value>
+	</Element>
+	
+	<Element name= "boxCheckboxAll">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//input[@data-original-title='Check All Items']</value>
+	</Element>
+	
+	<Element name= "filedOfSelectStatus">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//li[contains(text(),'{0}')]</value>
+	</Element>
+	
+	<Element name= "iconPublish">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//table//a[normalize-space(text())='{0}']//ancestor::tr//div[@class='btn-group']//span[@class='icon-publish']</value>
+	</Element>
+	
+	<Element name= "iconUnpublish">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//table//a[normalize-space(text())='{0}']//ancestor::tr//div[@class='btn-group']//span[@class='icon-unpublish']</value>
+	</Element>
+	
+	<Element name= "iconLock">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//table//a[normalize-space(text())='{0}']//ancestor::tr//td[@class='has-context']//span[@class='icon-checkedout']</value>
+	</Element>
+	
+	<Element name= "txtTitleHelpPage">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//h1[contains(text(),'Content Article Manager')]</value>
+	</Element>
+	
+	<Element name= "filterSelectStatusOfSearchTools">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@class='js-stools-field-filter']//a[contains(.,'{0}')]</value>
+	</Element>
+	
+	<Element name= "filterFiledDownList">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//li[contains(text(),'{0}')]</value>
+	</Element>
+	
+	<Element name= "filterEnterFiledSearchTools">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@class='js-stools-field-filter']//input[@value='- {0} -']//ancestor::ul</value>
+	</Element>
+	
+	<Element name= "txtHeaderID">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//th[contains(.,'ID')]/a</value>
+	</Element>
+	
+	<Element name= "checkIconPublish">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//table/tbody/tr[{0}]//span[@class='icon-{1}']</value>
+	</Element>
+	
+	<Element name= "checkNameCategory">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//table/tbody/tr[{0}]//div[contains(text(),'{1}')]</value>
+	</Element>
+	
+	<Element name= "checkNameAccess">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//table/tbody/tr[{0}]//td[contains(text(),'{1}')]</value>
+	</Element>
+	
+	<Element name= "checkNameAuthor">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//table/tbody/tr[{0}]//td[@class='small hidden-phone']//a[contains(text(),'{1}')]</value>
+	</Element>
+	
+	<Element name= "numberRow">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//table/tbody/tr</value>
+	</Element>
+	
+	<Element name= "numberDisplayInpage">
+		<type>xpath</type>
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@id='list_limit_chzn']//b</value>
+	</Element>
+	
+	<Element name= "chooseNumberDislpay">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@id='list_limit_chzn']//li[contains(text(),'{0}')]</value>
+	</Element>
+	
+	<Element name= "numberSelector">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@id='list_limit_chzn']/a[@class='chzn-single']</value>
+	</Element>
+	
+	<Element name= "idArticle">
+		<type>xpath</type>
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//table/tbody/tr[{0}]//td[@class='hidden-phone']</value>
+	</Element>
+	
+	<Element name= "iconNextPage">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//a[@class='hasTooltip']/span[@class='icon-step-forward icon-next']</value>
+	</Element>
+	
+	<Element name= "iconOrdering">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//table[@id='articleList']//span[@class='icon-menu-2']</value>
+	</Element>
+	
+	<Element name= "iconDownOrdering">
+		<type>xpath</type>
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//table[@id='articleList']//a//span[@class='icon-arrow-up-3']</value>
+	</Element>
+	
+	<Element name= "txbCheckbox">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//table//a[normalize-space(text())='{0}']//ancestor::tr//td[@class='center']//input</value>
+	</Element>
+	
+	<Element name= "position">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//table//a[normalize-space(text())='{0}']//ancestor::tr/preceding-sibling::tr</value>
+	</Element>
+	
+	<Element name= "iconFearuted">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//table//a[normalize-space(text())='{0}']//ancestor::tr//div[@class='btn-group']//span[@class='icon-featured']</value>
+	</Element>
+	
+	<Element name= "iconUnFearute">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//table//a[normalize-space(text())='{0}']//ancestor::tr//div[@class='btn-group']//span[@class='icon-unfeatured']</value>
+	</Element>
+	
+	<Element name= "filedAccessArticle">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//table//a[normalize-space(text())='{0}']//ancestor::tr//td[contains(text(),'{1}')]</value>
+	</Element>
+	
+	<Element name= "txtMessage">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@id='system-message-container']//div[@class='alert-message']</value>
+	</Element>
+	
+</properties>

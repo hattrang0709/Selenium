@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="testng">
+	 <listeners>
+  		<listener class-name="common.Listeners"></listener>
+  	 </listeners>
+  <test name="testRun" >
+	  <parameter name="browser" value="chrome"/>
+	  <parameter name="timeout" value="150"/>
+	  <parameter name="url" value="http://192.168.188.150/joomla/administrator/"/>
+		<classes>
+			<class name="testCase.TC_JOOMLA_ARTICLE_001_VerifyUserCanCreateNewArticleWithValidInformation" />
+			<class name="testCase.TC_JOOMLA_ARTICLE_002_VerifyUserCanEditAnArticle" />
+			<class name="testCase.TC_JOOMLA_ARTICLE_003_VerifyUserCanPublishAnUnpublishedArticle" />
+			<class name="testCase.TC_JOOMLA_ARTICLE_004_VerifyUserCanUnpublishAPublishedArticle" />
+			<class name="testCase.TC_JOOMLA_ARTICLE_005_VerifyUserCanMoveAnArticleToTheArchive" />
+			<class name="testCase.TC_JOOMLA_ARTICLE_006_VerifyUserCanCheckInAnArticle" />
+			<class name="testCase.TC_JOOMLA_ARTICLE_007_VerifyUserCanMoveAnArticleToTrashSection" />
+			<class name="testCase.TC_JOOMLA_ARTICLE_008_VerifyUserCanAccessArticleHelpSection" />
+			<class name="testCase.TC_JOOMLA_ARTICLE_009_VerifyUserCanSearchForArticlesUsingTheFilterTextField" />
+			<class name="testCase.TC_JOOMLA_ARTICLE_010_VerifyUserCanSearchForArticlesUsingTheFilterDropdownLists" />
+			<class name="testCase.TC_JOOMLA_ARTICLE_011_VerifyUserCanSortTheArticleTableByIDColumn" />
+			<class name="testCase.TC_JOOMLA_ARTICLE_012_VerifyUserCanPagingTheArticlesUsingThePagingControl" />
+			<class name="testCase.TC_JOOMLA_ARTICLE_013_VerifyUserCanAddImageToArticleContent" />
+			<class name="testCase.TC_JOOMLA_ARTICLE_014_VerifyusercanChangeTheOrderOofArticlesUsingTheOrderingColumn" />
+			<class name="testCase.TC_JOOMLA_ARTICLE_015_VerifyUserCanChangeTheStatusOfArticlesUsingTheStatusColumn" />
+			<class name="testCase.TC_JOOMLA_ARTICLE_016_VerifyUseCanChangeTheFeaturePropertyOfArticlesUsingTheFeaturedColumn" />
+			<class name="testCase.TC_JOOMLA_ARTICLE_017_VerifyUserCanCreateANewArticleWithPublicAccessLevelProperty" />
+			<class name="testCase.TC_JOOMLA_BANNERS_001_VerifyThatUserCanCreateNewBanner" />
+			<class name="testCase.TC_JOOMLA_BANNERS_002_VerifyThatUserCanEditABanner" />
+			<class name="testCase.TC_JOOMLA_BANNERS_003_VerifyThatUserCanCreateANewBannerWithUnpublishedStatus" />
+			<class name="testCase.TC_JOOMLA_BANNERS_004_VerifyThatUserCanUnpublishABanner" />
+			<class name="testCase.TC_JOOMLA_BANNERS_005_VerifyThatUserCanArchiveABanner" />
+			<class name="testCase.TC_JOOMLA_BANNERS_006_VerifyThatUserCanSendABannerToTrash" />
+			<class name="testCase.TC_JOOMLA_BANNERS_007_VerifyThatUserCanBrowseBannerHelpPage" />
+			<class name="testCase.TC_JOOMLA_BANNERS_008_VerifyThatUserCanSearchABannerByUsingFilterTextbox" />
+			<class name="testCase.TC_JOOMLA_BANNERS_009_VerifyThatUserCanSearchABannerByUsingFilterDropdownLists" />
+			<class name="testCase.TC_JOOMLA_BANNERS_010_VerifyThatUserCanCheckInABanner" />
+			<class name="testCase.TC_JOOMLA_BANNERS_011_VerifyThatUserCanCreateManyBannersByUsingSaveNewButton" />
+			<class name="testCase.TC_JOOMLA_BANNERS_012_VerifyThatUserCanBrowseNewBannerHelpPageInNewBannerPage" />
+			<class name="testCase.TC_JOOMLA_BANNERS_013_VerifyThatUserCanCreateANewBannerByUsingSaveAsCopyButton" />
+			<class name="testCase.TC_JOOMLA_BANNERS_014_VerifyThatUserCannotCreateANewBannerWithoutEnteringTheNameOfTheBanner" />
+			<class name="testCase.TC_JOOMLA_BANNERS_015_VerifyThatUserCanChangeTheQuantityOfItemsDisplayedInBannerTable" />
+			<class name="testCase.TC_JOOMLA_BANNERS_016_VerifyThatUserCanSortItemsDisplayedInBannerTableByID" />
+			<class name="testCase.TC_JOOMLA_BANNERS_017_VerifyThatUserCanAccessBannerClientsPageWhileBrowsingBannerPage" />
+		</classes>
+	</test>
+</suite>
+

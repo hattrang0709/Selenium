@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+
+	<Element name= "txbTitleCategories">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//input[@id='jform_title']</value>
+	</Element>
+	
+	<Element name= "bttMenuTop">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@id='toolbar']//button[contains(.,'{0}')]</value>
+	</Element>
+	
+	<Element name= "txtMessage">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@id='system-message-container']//div[@class='alert-message']</value>
+	</Element>
+	
+	
+</properties>

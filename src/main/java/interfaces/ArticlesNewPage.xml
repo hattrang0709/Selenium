@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+	<Element name= "txtTitle">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//input[@id='jform_title']</value>
+	</Element>
+	
+	<Element name= "lbCategory">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@id='jform_catid_chzn']/a</value>
+	</Element>
+	
+	<Element name= "txtArticle">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//body[@id='tinymce']</value>
+	</Element>
+	
+	<Element name= "iframeTxbArticle">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//iframe[@id='jform_articletext_ifr']</value>
+	</Element>
+	
+	<Element name= "btnSave">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@id = 'toolbar-apply']//button[contains(. ,'Save')]</value>
+	</Element>
+	
+	<Element name= "menuNewArticle">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@class='btn-wrapper']/button[contains(.,'{0}')]</value>
+	</Element>
+	
+	<Element name= "filedInDownListCateory">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//li[contains(text(),'{0}')]</value>
+	</Element>
+	
+	<Element name= "lbStatus">// list box
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@id='jform_state_chzn']//b</value>
+	</Element>
+	
+	<Element name= "filedInDownListStatus">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@id='jform_state_chzn']//li[contains(text(),'{0}')]</value>
+	</Element>
+	
+	<Element name= "txtMassageSuccess">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[contains(text(),'{0}')]</value>
+	</Element>
+	
+	<Element name= "lbAccess">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//a[contains(.,'Public')]</value>
+	</Element>
+	
+	<Element name= "filedInDownListAccess">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//ul[@class='chzn-results']//li[contains(text(),'{0}')]</value>
+	</Element>
+	
+	<Element name= "menuTextArticle">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@id='mceu_54']/button[contains(.,'{0}')]</value>
+	</Element>
+	
+	<Element name= "iframeImageName">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@class='mce-container mce-panel mce-floatpanel mce-window mce-in']//iframe[1]</value>
+	</Element>
+	
+	<Element name= "iframeImageName2">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//iframe[@name='imageframe' or @id='imageframe']</value>
+	</Element>
+	
+	<Element name= "imageName">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//a[@title='{0}']</value>
+	</Element>
+	
+	<Element name= "btnInsert">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//button[contains(text(),'Insert')]</value>
+	</Element>
+	
+	<Element name= "txtMassage">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//div[@id='system-message-container']//div[@class='alert-message']</value>
+	</Element>
+	
+</properties>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+
+	<Element name= "memuHeader">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//li[@class='dropdown']/a[contains(.,'{0}')]</value>
+	</Element>
+	
+	<Element name= "article">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//li[@class='dropdown-submenu']/a[contains(text(),'Articles')]</value>
+	</Element>
+	
+	<Element name= "btnAddNew">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//ul[@id='nav-empty']//a[contains(text(),'Add New Article')]</value>
+	</Element>
+	
+	<Element name= "banners">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//li[@class='dropdown-submenu']/a[contains(text(), 'Banners')]</value>
+	</Element>
+	
+	<Element name= "btnAddBanners">
+		<type>xpath</type>
+		<By>By.xpath</By>
+		<value>//ul[@id='nav-empty']//a[contains(text(),'Banners')]</value>
+	</Element>
+</properties>	
+	
