@@ -57,7 +57,7 @@ public class TC_JOOMLA_ARTICLE_008_VerifyUserCanAccessArticleHelpSection extends
 	  Log.info("Step 6: Click on 'Help' icon of the top right toolbar");
 	  article.clickBtnHelp();
 	  
-	  Log.info(" Verify poit : The article's help window is displayed");
+	  Log.info(" Verify point : The article's help window is displayed");
 	  verifyTrue(article.isHelpScreenDisplay());
   }
   

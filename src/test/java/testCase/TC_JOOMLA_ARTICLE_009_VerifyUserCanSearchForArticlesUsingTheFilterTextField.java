@@ -72,7 +72,7 @@ public class TC_JOOMLA_ARTICLE_009_VerifyUserCanSearchForArticlesUsingTheFilterT
 	  Log.info("Step 11: Click on 'Save & Close' icon of the top right toolbar");
 	  page.clickBtnSaveAndClose();
 	  
-	  Log.info(" Verify poit : Verify the article is saved successfully");
+	  Log.info(" Verify point : Verify the article is saved successfully");
 	  control.verifyTrue(article.messageSaveSuccessDisplay());
 	  control.verifyTrue(article.articleNameDisplay(Constant.tc009Article.Title));
 	  
@@ -82,7 +82,7 @@ public class TC_JOOMLA_ARTICLE_009_VerifyUserCanSearchForArticlesUsingTheFilterT
 	  Log.info("Step 13: Click on 'Search' button");
 	  article.clickBtnSearch();
 	  
-	  Log.info(" Verify poit : Verify the confirm message is displayed");
+	  Log.info(" Verify point : Verify the confirm message is displayed");
 	  verifyTrue(article.isArticleNameDisplay(Constant.tc009Article.Title));
   }
   

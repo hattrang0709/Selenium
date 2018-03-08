@@ -63,8 +63,9 @@ public class TC_JOOMLA_BANNERS_015_VerifyThatUserCanChangeTheQuantityOfItemsDisp
 	  
 	  Log.info("Step 5: Select quantily that user wants to display");
 	  banner.selectTxbNumberDisplay(Constant.tc015Banners.NumberDisplay);
+	  banner.clickIconNextPage();
 	  
-	  Log.info(" Verify poit : A message : 'Banners successfully saved' shows and new Banners is created");
+	  Log.info(" Verify point : Verify quantity of items displayed in table is changed");
 	  verifyTrue(banner.checkNumberBanners(Constant.tc015Banners.NumberDisplay));
   
   }

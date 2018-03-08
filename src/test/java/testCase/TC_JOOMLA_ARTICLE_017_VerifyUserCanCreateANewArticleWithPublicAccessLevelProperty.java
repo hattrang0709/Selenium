@@ -72,7 +72,7 @@ public class TC_JOOMLA_ARTICLE_017_VerifyUserCanCreateANewArticleWithPublicAcces
 	  Log.info("Step 11: Click on 'Save & Close' icon of the top right toolbar");
 	  page.clickBtnSaveAndClose();
 	  
-	  Log.info(" Verify poit : the article is saved successfully");
+	  Log.info(" Verify point : the article is saved successfully");
 	  verifyTrue(article.messageSaveSuccessDisplay());
 	  verifyTrue(article.articleNameDisplay(Constant.tc017Article.Title));
 	  verifyTrue(article.isFiledNameAccess(Constant.tc017Article.Title, Constant.tc017Article.FiledAccess));

@@ -75,7 +75,7 @@ public class TC_JOOMLA_BANNERS_005_VerifyThatUserCanArchiveABanner extends Actio
 	  Log.info("Step 9: Click 'Save & Close' button");
 	  newClients.clickBtnSaveAndClose();
 	  
-	  Log.info(" Verify poit : A message : 'Client successfully saved' shows and new client is created");
+	  Log.info(" Verify point : A message : 'Client successfully saved' shows and new client is created");
 	  verifyTrue(clients.checkMessageSavedSuccessfully());
 	  verifyTrue(clients.checkClientsCreated(Constant.tc005Banners.ClientsName));
 	  
@@ -91,7 +91,7 @@ public class TC_JOOMLA_BANNERS_005_VerifyThatUserCanArchiveABanner extends Actio
 	  Log.info("Step 14: Click 'Save & Close' button");
 	  newCategories.clickBtnSaveAndClose();
 	  
-	  Log.info(" Verify poit : A message : 'Client successfully saved' shows and new client is created");
+	  Log.info(" Verify point : A message : 'Client successfully saved' shows and new client is created");
 	  verifyTrue(categories.checkMessageSavedSuccessfully());
 	  verifyTrue(categories.checkCategoriesCreated(Constant.tc005Banners.CategoryName));
 	  
@@ -114,7 +114,7 @@ public class TC_JOOMLA_BANNERS_005_VerifyThatUserCanArchiveABanner extends Actio
 	  Log.info("Step 21: Click 'Save & Close' button");
 	  newBanners.clickBtnSaveAndClose();
 	  
-	  Log.info(" Verify poit : A message : 'Banners successfully saved' shows and new Banners is created");
+	  Log.info(" Verify point : A message : 'Banners successfully saved' shows and new Banners is created");
 	  verifyTrue(banner.checkMessageSavedSuccessfully());
 	  verifyTrue(banner.checkBannersCreated(Constant.tc005Banners.BannersName));
 	  
@@ -124,13 +124,13 @@ public class TC_JOOMLA_BANNERS_005_VerifyThatUserCanArchiveABanner extends Actio
 	  Log.info("Step 24: Click 'Archive' button in the right top corner");
 	  banner.clickBtnArchite();
 	  
-	  Log.info(" Verify poit : A message : 'Banners successfully saved' shows and new Banners is created");
+	  Log.info(" Verify point : A message : 'Banners successfully saved' shows and new Banners is created");
 	  verifyTrue(banner.checkMessageArchited());
 	  
 	  Log.info("Step 26: Select 'Archive' in Status dropdown list");
 	  banner.selectFiledOfDownListStatus(Constant.tc005Banners.DownListStatusFiled);
 	  
-	  Log.info(" Verify poit : Banner is archived");
+	  Log.info(" Verify point : Banner is archived");
 	  verifyTrue(banner.checkBannersCreated(Constant.tc005Banners.BannersName));
 	  
   }

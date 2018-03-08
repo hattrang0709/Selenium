@@ -6,7 +6,7 @@
   	 </listeners>
   <test name="testRun" >
 	  <parameter name="browser" value="chrome"/>
-	  <parameter name="timeout" value="150"/>
+	  <parameter name="timeout" value="50"/>
 	  <parameter name="url" value="http://192.168.188.150/joomla/administrator/"/>
 		<classes>
 			<class name="testCase.TC_JOOMLA_ARTICLE_001_VerifyUserCanCreateNewArticleWithValidInformation" />

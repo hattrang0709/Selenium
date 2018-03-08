@@ -74,7 +74,7 @@ public class TC_JOOMLA_BANNERS_006_VerifyThatUserCanSendABannerToTrash extends A
 	  Log.info("Step 9: Click 'Save & Close' button");
 	  newClients.clickBtnSaveAndClose();
 	  
-	  Log.info(" Verify poit : A message : 'Client successfully saved' shows and new client is created");
+	  Log.info(" Verify point : A message : 'Client successfully saved' shows and new client is created");
 	  verifyTrue(clients.checkMessageSavedSuccessfully());
 	  verifyTrue(clients.checkClientsCreated(Constant.tc006Banners.ClientsName));
 	  
@@ -90,7 +90,7 @@ public class TC_JOOMLA_BANNERS_006_VerifyThatUserCanSendABannerToTrash extends A
 	  Log.info("Step 14: Click 'Save & Close' button");
 	  newCategories.clickBtnSaveAndClose();
 	  
-	  Log.info(" Verify poit : A message : 'Client successfully saved' shows and new client is created");
+	  Log.info(" Verify point : A message : 'Client successfully saved' shows and new client is created");
 	  verifyTrue(categories.checkMessageSavedSuccessfully());
 	  verifyTrue(categories.checkCategoriesCreated(Constant.tc006Banners.CategoryName));
 	  
@@ -113,7 +113,7 @@ public class TC_JOOMLA_BANNERS_006_VerifyThatUserCanSendABannerToTrash extends A
 	  Log.info("Step 21: Click 'Save & Close' button");
 	  newBanners.clickBtnSaveAndClose();
 	  
-	  Log.info(" Verify poit : A message : 'Banners successfully saved' shows and new Banners is created");
+	  Log.info(" Verify point : A message : 'Banners successfully saved' shows and new Banners is created");
 	  verifyTrue(banner.checkMessageSavedSuccessfully());
 	  verifyTrue(banner.checkBannersCreated(Constant.tc006Banners.BannersName));
 	  
@@ -123,13 +123,13 @@ public class TC_JOOMLA_BANNERS_006_VerifyThatUserCanSendABannerToTrash extends A
 	  Log.info("Step 24: Click 'Trash' button in the right top corner");
 	  banner.clickBtnTrash();
 	  
-	  Log.info(" Verify poit : A message : 'Banners successfully saved' shows and new Banners is created");
+	  Log.info(" Verify point : A message : 'Banners successfully saved' shows and new Banners is created");
 	  verifyTrue(banner.checkMessageTrashed());
 	  
 	  Log.info("Step 26: Select 'Trashed' in Status dropdown list");
 	  banner.selectFiledOfDownListStatus(Constant.tc006Banners.DownListStatusFiled);
 	  
-	  Log.info(" Verify poit : Banner is archived");
+	  Log.info(" Verify point : Banner is archived");
 	  verifyTrue(banner.checkBannersCreated(Constant.tc006Banners.BannersName));
 	  
   }

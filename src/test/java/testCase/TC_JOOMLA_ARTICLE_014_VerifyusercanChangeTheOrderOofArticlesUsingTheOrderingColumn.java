@@ -69,7 +69,7 @@ public class TC_JOOMLA_ARTICLE_014_VerifyusercanChangeTheOrderOofArticlesUsingTh
 	  Log.info("Step 10: Click on 'Save & Close' icon of the top right toolbar");
 	  page.clickBtnSaveAndClose();
 	  
-	  Log.info(" Verify poit : the article is saved successfully");
+	  Log.info(" Verify point : the article is saved successfully");
 	  verifyTrue(article.messageSaveSuccessDisplay());
 	  verifyTrue(article.articleNameDisplay(Constant.tc014Article.Title));
 	  
@@ -91,7 +91,7 @@ public class TC_JOOMLA_ARTICLE_014_VerifyusercanChangeTheOrderOofArticlesUsingTh
 	  Log.info("Step 17: Click on 'Save & Close' icon of the top right toolbar");
 	  page.clickBtnSaveAndClose();
 	  
-	  Log.info(" Verify poit : the article is saved successfully");
+	  Log.info(" Verify point : the article is saved successfully");
 	  verifyTrue(article.messageSaveSuccessDisplay());
 	  verifyTrue(article.articleNameDisplay(Constant.tc014Article.Title2));
 	  
@@ -101,7 +101,7 @@ public class TC_JOOMLA_ARTICLE_014_VerifyusercanChangeTheOrderOofArticlesUsingTh
 	  Log.info("Step 20: Click on down arrow in Ordering column of the selected article");
 	  article.clickIconDownOrdering();
 	  
-	  Log.info(" Verify poit :Verify the first article changes its position with the second article");
+	  Log.info(" Verify point :Verify the first article changes its position with the second article");
 	  verifyTrue(article.checkChangePosition(Constant.tc014Article.Title, Constant.tc014Article.Title2));
   }
   

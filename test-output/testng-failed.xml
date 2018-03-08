@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="-1" name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <parameter name="browser" value="chrome"/>
-  <parameter name="timeout" value="15"/>
-  <parameter name="url" value="http://192.168.188.150/joomla/administrator/"/>
   <test name="Default test(failed)">
     <classes>
-      <class name="testCase.TC_JOOMLA_BANNERS_016_VerifyThatUserCanSortItemsDisplayedInBannerTableByID">
+      <class name="testCase.TC_JOOMLA_BANNERS_017_VerifyThatUserCanAccessBannerClientsPageWhileBrowsingBannerPage">
         <methods>
-          <include name="beforeMethod"/>
           <include name="Login"/>
           <include name="afterMethod"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- testCase.TC_JOOMLA_BANNERS_016_VerifyThatUserCanSortItemsDisplayedInBannerTableByID -->
+      </class> <!-- testCase.TC_JOOMLA_BANNERS_017_VerifyThatUserCanAccessBannerClientsPageWhileBrowsingBannerPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

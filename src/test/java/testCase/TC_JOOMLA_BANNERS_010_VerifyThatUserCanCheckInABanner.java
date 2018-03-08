@@ -74,7 +74,7 @@ public class TC_JOOMLA_BANNERS_010_VerifyThatUserCanCheckInABanner extends Actio
 	  Log.info("Step 9: Click 'Save & Close' button");
 	  newClients.clickBtnSaveAndClose();
 	  
-	  Log.info(" Verify poit : A message : 'Client successfully saved' shows and new client is created");
+	  Log.info(" Verify point : A message : 'Client successfully saved' shows and new client is created");
 	  verifyTrue(clients.checkMessageSavedSuccessfully());
 	  verifyTrue(clients.checkClientsCreated(Constant.tc010Banners.ClientsName));
 	  
@@ -90,7 +90,7 @@ public class TC_JOOMLA_BANNERS_010_VerifyThatUserCanCheckInABanner extends Actio
 	  Log.info("Step 14: Click 'Save & Close' button");
 	  newCategories.clickBtnSaveAndClose();
 	  
-	  Log.info(" Verify poit : A message : 'Client successfully saved' shows and new client is created");
+	  Log.info(" Verify point : A message : 'Client successfully saved' shows and new client is created");
 	  verifyTrue(categories.checkMessageSavedSuccessfully());
 	  verifyTrue(categories.checkCategoriesCreated(Constant.tc010Banners.CategoryName));
 	  
@@ -113,7 +113,7 @@ public class TC_JOOMLA_BANNERS_010_VerifyThatUserCanCheckInABanner extends Actio
 	  Log.info("Step 21: Click 'Save' button");
 	  newBanners.clickBtnSave();
 	  
-	  Log.info(" Verify poit : A message : 'Banners successfully saved' shows and new Banners is created");
+	  Log.info(" Verify point : A message : 'Banners successfully saved' shows and new Banners is created");
 	  System.out.println(banner.checkMessageSavedSuccessfully());
 	  verifyTrue(banner.checkMessageSavedSuccessfully());
 	  
@@ -134,7 +134,7 @@ public class TC_JOOMLA_BANNERS_010_VerifyThatUserCanCheckInABanner extends Actio
 	  Log.info("Step 27: Select Components -> Banners -> Banners");
 	  control.navigateToMenuPage(Constant.pageName.goToBanners);
   
-	  Log.info(" Verify poit :Recently created banner displays and locked");
+	  Log.info(" Verify point :Recently created banner displays and locked");
 	  verifyTrue(banner.checkIconLock(Constant.tc010Banners.BannersName));
 	  
 	  Log.info("Step 29: Check the banner recently created");
@@ -143,7 +143,7 @@ public class TC_JOOMLA_BANNERS_010_VerifyThatUserCanCheckInABanner extends Actio
 	  Log.info("Step 30: Click Check In button ");
 	  banner.clickBtnCheckIn();
 	  
-	  Log.info(" Verify poit :A message '1 banner successfully checked in' appears and banner is changed to unlock");
+	  Log.info(" Verify point :A message '1 banner successfully checked in' appears and banner is changed to unlock");
 	  verifyTrue(banner.checkMessageCheckedIn());
 	  verifyFalse(banner.checkIconLock(Constant.tc010Banners.BannersName));
 

@@ -76,7 +76,7 @@ public class TC_JOOMLA_BANNERS_013_VerifyThatUserCanCreateANewBannerByUsingSaveA
 	  Log.info("Step 9: Click 'Save & Close' button");
 	  newClients.clickBtnSaveAndClose();
 	  
-	  Log.info(" Verify poit : A message : 'Client successfully saved' shows and new client is created");
+	  Log.info(" Verify point : A message : 'Client successfully saved' shows and new client is created");
 	  verifyTrue(clients.checkMessageSavedSuccessfully());
 	  verifyTrue(clients.checkClientsCreated(Constant.tc013Banners.ClientsName));
 	  
@@ -92,7 +92,7 @@ public class TC_JOOMLA_BANNERS_013_VerifyThatUserCanCreateANewBannerByUsingSaveA
 	  Log.info("Step 14: Click 'Save & Close' button");
 	  newCategories.clickBtnSaveAndClose();
 	  
-	  Log.info(" Verify poit : A message : 'Client successfully saved' shows and new client is created");
+	  Log.info(" Verify point : A message : 'Client successfully saved' shows and new client is created");
 	  verifyTrue(categories.checkMessageSavedSuccessfully());
 	  verifyTrue(categories.checkCategoriesCreated(Constant.tc013Banners.CategoryName));
 	  
@@ -115,7 +115,7 @@ public class TC_JOOMLA_BANNERS_013_VerifyThatUserCanCreateANewBannerByUsingSaveA
 	  Log.info("Step 21: Click 'Save' button");
 	  newBanners.clickBtnSave();
 	  
-	  Log.info(" Verify poit : A message : 'Banners successfully saved' shows and new Banners is created");
+	  Log.info(" Verify point : A message : 'Banners successfully saved' shows and new Banners is created");
 	  verifyTrue(newBanners.checkMessageSavedSuccessfully());
 	  verifyTrue(newBanners.isEditBannersScreenDisplay());
 	  
@@ -125,7 +125,7 @@ public class TC_JOOMLA_BANNERS_013_VerifyThatUserCanCreateANewBannerByUsingSaveA
 	  Log.info("Step 24: Click 'Save as Copy' button");
 	  editBanners.clickBtnSaveAsCopy();
 	  
-	  Log.info(" Verify poit : Recently created banner displays");
+	  Log.info(" Verify point : Recently created banner displays");
 	  verifyTrue(editBanners.checkMessageSavedSuccessfully());
 	  editBanners.clickBtnClose();
 	  verifyTrue(banner.checkBannersReplaced(Constant.tc013Banners.BannersName, Constant.tc013Banners.BannersName2));

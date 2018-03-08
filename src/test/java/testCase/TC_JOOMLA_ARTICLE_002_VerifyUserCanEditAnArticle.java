@@ -28,12 +28,12 @@ public class TC_JOOMLA_ARTICLE_002_VerifyUserCanEditAnArticle extends Action{
 	
 	@BeforeMethod
 	@Parameters({"browser","timeout","url"})
-	  public void beforeMethod(String browser, String timeout, String url) {
-		  configure = new Configure();
-		  Reporter.log("Browser Opened");
-		  configure.setUp(browser,timeout,url);
-		  login = new LoginPage();
-		  home = new HomePage();
+	 public void beforeMethod(String browser, String timeout, String url) {
+		 configure = new Configure();
+		 Reporter.log("Browser Opened");
+		 configure.setUp(browser,timeout,url);
+		 login = new LoginPage();
+		 home = new HomePage();
 	  }
   
   @Test
@@ -69,7 +69,7 @@ public class TC_JOOMLA_ARTICLE_002_VerifyUserCanEditAnArticle extends Action{
 	  Log.info("Step 10: Click on 'Save & Close' icon of the top right toolbar");
 	  page.clickBtnSaveAndClose();
 	  
-	  Log.info(" Verify poit : the article is saved successfully");
+	  Log.info(" Verify point : the article is saved successfully");
 	  verifyTrue(article.messageSaveSuccessDisplay());
 	  verifyTrue(article.articleNameDisplay(Constant.tc002Article.Title));
 	  
@@ -94,7 +94,7 @@ public class TC_JOOMLA_ARTICLE_002_VerifyUserCanEditAnArticle extends Action{
 	  Log.info("Step 18: Click on 'Save & Close' icon of the top right toolbar");
 	  page.clickBtnSaveAndClose();
 	  
-	  Log.info("Verify poit 2: Verify the article is saved successfully");
+	  Log.info("Verify point 2: Verify the article is saved successfully");
 	  verifyTrue(article.messageSaveSuccessDisplay());
 	  verifyTrue(article.articleNameDisplay(Constant.tc002Article.Title2));
   }

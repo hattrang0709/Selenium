@@ -21,22 +21,10 @@ import org.testng.annotations.AfterMethod;
 
 public class TC_JOOMLA_BANNERS_012_VerifyThatUserCanBrowseNewBannerHelpPageInNewBannerPage extends Action {
 
-	HomePage home ;
-	LoginPage login;
-	Configure configure; 
-	Logger Log = Logger.getLogger("TCLoginPage");
-	ControlPanelPage control = new ControlPanelPage();
-	BannersClientsPage clients = new BannersClientsPage();
-	BannersNewClientsPage newClients = new BannersNewClientsPage();
-	BannersCategoriesPage categories = new BannersCategoriesPage();
-	BannersNewCategoriesPage newCategories = new BannersNewCategoriesPage();
-	BannersNewPage newBanners = new BannersNewPage();
-	BannersPage banner = new BannersPage();
-	
 	
   @BeforeMethod
   @Parameters({"browser","timeout","url"})
-  public void beforeMethod(String browser, String timeout, String url) {
+  public void setUp(String browser, String timeout, String url) {
 	  configure = new Configure();
 	  Reporter.log("Browser Opened");
 	  configure.setUp(browser,timeout,url);
@@ -65,7 +53,7 @@ public class TC_JOOMLA_BANNERS_012_VerifyThatUserCanBrowseNewBannerHelpPageInNew
 	  Log.info("Step 5: Click 'Help' button in the right top corner");
 	  newBanners.clickBtnHelp();
 	  
-	  Log.info(" Verify poit : 'Banner help' page appears");
+	  Log.info(" Verify point : 'Banner help' page appears");
 	  verifyTrue(newBanners.isHelpScreenDisplay());
 	  
   }
@@ -77,4 +65,16 @@ public class TC_JOOMLA_BANNERS_012_VerifyThatUserCanBrowseNewBannerHelpPageInNew
   }
   
 
+	HomePage home ;
+	LoginPage login;
+	Configure configure; 
+	Logger Log = Logger.getLogger("TCLoginPage");
+	ControlPanelPage control = new ControlPanelPage();
+	BannersClientsPage clients = new BannersClientsPage();
+	BannersNewClientsPage newClients = new BannersNewClientsPage();
+	BannersCategoriesPage categories = new BannersCategoriesPage();
+	BannersNewCategoriesPage newCategories = new BannersNewCategoriesPage();
+	BannersNewPage newBanners = new BannersNewPage();
+	BannersPage banner = new BannersPage();
+	
 }

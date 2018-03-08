@@ -1,16 +1,13 @@
 package action;
 
-import java.io.File;
+
 import java.lang.reflect.Method;
 import java.util.Iterator;
 import java.util.Set;
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.xpath.XPath;
 import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathExpression;
 import javax.xml.xpath.XPathFactory;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -20,12 +17,15 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-
 import common.Configure;
 
-public class Action{
+public class Action extends Configure {
 public WebElement e;
 	
+	/**
+	 * find element
+	 * @param Path
+	 */
 	public void findElement(By Path) {
 		Configure.waitPageLoad(30);
 		Configure.waitElementDisplay(10);
@@ -36,6 +36,7 @@ public WebElement e;
 			Configure.waitCondition(10, ExpectedConditions.elementToBeClickable(Path));
 		}
 	}
+	
 	/**
 	 * scroll up head page
 	 */
@@ -43,11 +44,15 @@ public WebElement e;
 		JavascriptExecutor js = (JavascriptExecutor) Configure.driver;
 		js.executeScript("window.scrollBy(0,-1000)");
 	}
-
+	
+	/**
+	 * scroll down page
+	 */
 	public void scrollDownPage() {
 		JavascriptExecutor js = (JavascriptExecutor) Configure.driver;
 		js.executeScript("window.scrollBy(0,1000)");
 	}
+	
 	/**
 	 * click button have path address 
 	 * @param path
@@ -59,11 +64,11 @@ public WebElement e;
 		}
 		catch (Exception ee) {
 			findElement(Path);
+			scrollElement();
 			focus(Path);
 			e.click();
 			// TODO: handle exception
 		}
-		
 	}
 	
 	/**
@@ -85,6 +90,12 @@ public WebElement e;
 		e.clear();
 		e.sendKeys(value);
 	} 
+	
+	/**
+	 * sendkeys path with key 
+	 * @param Path
+	 * @param value
+	 */
 	public void sendkey(By Path,Keys value) {
 		findElement(Path);
 		e.clear();
@@ -154,6 +165,13 @@ public WebElement e;
 	} 
 	
 	/**
+	 * Scroll to element
+	 */
+	public void scrollElement() {
+		((JavascriptExecutor) Configure.driver).executeScript("arguments[0].scrollIntoView();", e);
+	}
+	
+	/**
 	 * sleep at page
 	 */
 	public void sleepPage(int Number) {
@@ -198,17 +216,6 @@ public WebElement e;
 		Configure.driver.switchTo().defaultContent();
 	}
 	
-	public Document readXmlFile(String filePath) {
-		try {
-			File configFile=new File(filePath);
-			DocumentBuilderFactory dFactory=DocumentBuilderFactory.newInstance();//create a object 'DocumentBuilderFactory' from mothod its
-			DocumentBuilder dBuilder=dFactory.newDocumentBuilder();// Sét đặt việc kiểm tra tính hợp lệ của tài liệu sẽ phân tích sau này
-			return dBuilder.parse(configFile);
-		}
-		catch (Exception e) {
-			return null;
-		}
-	}
 	
 	/**
 	 * read element

@@ -72,7 +72,7 @@ public class TC_JOOMLA_ARTICLE_015_VerifyUserCanChangeTheStatusOfArticlesUsingTh
 	  Log.info("Step 11: Click on 'Save & Close' icon of the top right toolbar");
 	  page.clickBtnSaveAndClose();
 	  
-	  Log.info(" Verify poit : the article is saved successfully");
+	  Log.info(" Verify point : the article is saved successfully");
 	  control.verifyTrue(article.messageSaveSuccessDisplay());
 	  control.verifyTrue(article.articleNameDisplay(Constant.tc015Article.Title));
 	  
@@ -82,7 +82,7 @@ public class TC_JOOMLA_ARTICLE_015_VerifyUserCanChangeTheStatusOfArticlesUsingTh
 	  Log.info("Step 14: Click on the status icon of the selected article in the Status column");
 	  article.clickIconPulish(Constant.tc015Article.Title);
 	  
-	  Log.info(" Verify poit : Verify the article is unpublished successfully");
+	  Log.info(" Verify point : Verify the article is unpublished successfully");
 	  verifyTrue(article.isUnPublicIconDisplay(Constant.tc015Article.Title));
 	  verifyTrue(article.isMessageArticleUnPublicDisplay());
 	  
@@ -92,7 +92,7 @@ public class TC_JOOMLA_ARTICLE_015_VerifyUserCanChangeTheStatusOfArticlesUsingTh
 	  Log.info("Step 17: Click on the status icon of the selected article in the Status column");
 	  article.clickIconUnPulish(Constant.tc015Article.Title);
 	  
-	  Log.info(" Verify poit : Verify the article is published successfully");
+	  Log.info(" Verify point : Verify the article is published successfully");
 	  verifyTrue(article.isPublicIconDisplay(Constant.tc015Article.Title));
 	  verifyTrue(article.isMessageArticlePublicDisplay());
   }

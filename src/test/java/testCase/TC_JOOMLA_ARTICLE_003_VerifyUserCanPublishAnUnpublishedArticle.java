@@ -72,7 +72,7 @@ public class TC_JOOMLA_ARTICLE_003_VerifyUserCanPublishAnUnpublishedArticle exte
 	  Log.info("Step 11: Click on 'Save & Close' icon of the top right toolbar");
 	  page.clickBtnSaveAndClose();
 	  
-	  Log.info(" Verify poit : the article is saved successfully");
+	  Log.info(" Verify point : the article is saved successfully");
 	  control.verifyTrue(article.messageSaveSuccessDisplay());
 	  control.verifyTrue(article.articleNameDisplay(Constant.tc003Article.Title));
 	  
@@ -82,7 +82,7 @@ public class TC_JOOMLA_ARTICLE_003_VerifyUserCanPublishAnUnpublishedArticle exte
 	  Log.info("Step 14: Click on 'Publish' icon of the top right toolbar");
 	  article.clickBtnPublic();
 	  
-	  Log.info(" Verify poit : the article is saved successfully");
+	  Log.info(" Verify point : the article is saved successfully");
 	  verifyTrue(article.isPublicIconDisplay(Constant.tc003Article.Title));
 	  verifyTrue(article.isMessageArticlePublicDisplay());
   }

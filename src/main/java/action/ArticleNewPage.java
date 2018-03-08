@@ -1,6 +1,8 @@
 package action;
 
 import org.openqa.selenium.By;
+
+import common.Constant;
 import interfaces.Interfaces;
 
 public class ArticleNewPage extends Action {
@@ -40,26 +42,31 @@ public class ArticleNewPage extends Action {
 		switchBack();
 	}
 	
+	public void enterTxbTitle(String Title) {
+		System.out.println(Constant.tc001Article.Title);
+		sendkey(readElementAtArticlesNewPage(Interfaces.ArticlesNewPage.txbInputTitle), Title);
+	}
+	
 	/**
 	 * click button on menu text article
 	 * @param Button
 	 */
 	public void clickMenuTextArticle(String Button) {
-		click( readElementAtArticlesNewPage(Interfaces.ArticlesNewPage.menuTextArticle, Button));
+		click(readElementAtArticlesNewPage(Interfaces.ArticlesNewPage.menuTextArticle, Button));
 	}
 	
 	/**
 	 * click button save
 	 */
 	public void clickBtnSave() {
-		click( readElementAtArticlesNewPage(Interfaces.ArticlesNewPage.btnSave));
+		click(readElementAtArticlesNewPage(Interfaces.ArticlesNewPage.btnSave));
 	}
 	
 	/**
 	 * click Access
 	 */
 	public void clickAccessArticle() {
-		click( readElementAtArticlesNewPage(Interfaces.ArticlesNewPage.lbAccess));
+		click(readElementAtArticlesNewPage(Interfaces.ArticlesNewPage.lbAccess));
 	}
 	
 	/**
@@ -68,7 +75,7 @@ public class ArticleNewPage extends Action {
 	 */
 	public void selectFiledDownListAccess(String Access) {
 		
-		click( readElementAtArticlesNewPage(Interfaces.ArticlesNewPage.filedInDownListAccess, Access));
+		click(readElementAtArticlesNewPage(Interfaces.ArticlesNewPage.filedInDownListAccess, Access));
 	}
 	
 	/**
@@ -84,14 +91,14 @@ public class ArticleNewPage extends Action {
 	 *  click at button save and close in the article new page
 	 */
 	public void clickBtnSaveAndClose() {
-		click( readElementAtArticlesNewPage(Interfaces.ArticlesNewPage.menuNewArticle, Interfaces.ArticlesNewPage.btnSaveAndClose));
+		click(readElementAtArticlesNewPage(Interfaces.ArticlesNewPage.menuNewArticle, Interfaces.ArticlesNewPage.btnSaveAndClose));
 	}
 	
 	/**
 	 * click at button save and new in the article new page
 	 */
 	public void clickBtnSaveAndNew() {
-		click( readElementAtArticlesNewPage(Interfaces.ArticlesNewPage.menuNewArticle, Interfaces.ArticlesNewPage.btnSaveAndNew));
+		click(readElementAtArticlesNewPage(Interfaces.ArticlesNewPage.menuNewArticle, Interfaces.ArticlesNewPage.btnSaveAndNew));
 	}
 	
 	
@@ -99,14 +106,14 @@ public class ArticleNewPage extends Action {
 	 * click at category text box in the article new page
 	 */
 	public void clickCategory() {
-		click( readElementAtArticlesNewPage(Interfaces.ArticlesNewPage.lbCategory));
+		click(readElementAtArticlesNewPage(Interfaces.ArticlesNewPage.lbCategory));
 	}
 	
 	/**
 	 * click button close 
 	 */
 	public void clickBtnClose() {
-		click( readElementAtArticlesNewPage(Interfaces.ArticlesNewPage.menuNewArticle, Interfaces.ArticlesNewPage.btnClose));
+		click(readElementAtArticlesNewPage(Interfaces.ArticlesNewPage.menuNewArticle, Interfaces.ArticlesNewPage.btnClose));
 	}
 	
 	/**
@@ -115,7 +122,7 @@ public class ArticleNewPage extends Action {
 	 * @param Category
 	 */
 	public void selectCategory(String Category) {
-		click( readElementAtArticlesNewPage(Interfaces.ArticlesNewPage.filedInDownListCateory,Category));
+		click(readElementAtArticlesNewPage(Interfaces.ArticlesNewPage.filedInDownListCateory,Category));
 	}
 	
 	/**
@@ -133,7 +140,7 @@ public class ArticleNewPage extends Action {
 	 * click select Status to seen down list Status
 	 */
 	public void clickStatusArticle() {
-		click( readElementAtArticlesNewPage(Interfaces.ArticlesNewPage.lbStatus));
+		click(readElementAtArticlesNewPage(Interfaces.ArticlesNewPage.lbStatus));
 	}
 	/**
 	 * 
@@ -141,7 +148,7 @@ public class ArticleNewPage extends Action {
 	 * @param item
 	 */
 	public void clickChooseStatus(String item) {
-		click( readElementAtArticlesNewPage(Interfaces.ArticlesNewPage.filedInDownListStatus, item));
+		click(readElementAtArticlesNewPage(Interfaces.ArticlesNewPage.filedInDownListStatus, item));
 	}
 	
 	/**
@@ -159,9 +166,8 @@ public class ArticleNewPage extends Action {
 	 * @param Content
 	 */
 	public void enterArticleText(String Content) {
-		switchToFrame( readElementAtArticlesNewPage(Interfaces.ArticlesNewPage.iframeTxbArticle));
+		switchToFrame(readElementAtArticlesNewPage(Interfaces.ArticlesNewPage.iframeTxbArticle));
 		sendkey(readElementAtArticlesNewPage(Interfaces.ArticlesNewPage.txtArticle),Content);
-		
 		switchBack();
 	}
 	
@@ -180,7 +186,7 @@ public class ArticleNewPage extends Action {
 	 * @return
 	 */
 	public boolean messageSaveSuccessDisplay() {
-		String text = getText( readElementAtArticlesNewPage(Interfaces.ArticlesNewPage.txtMassage));
+		String text = getText(readElementAtArticlesNewPage(Interfaces.ArticlesNewPage.txtMassage));
 		if(text.equals(Interfaces.ArticlesNewPage.txtMessageSave)) {
 			return true;
 		}
@@ -211,38 +217,15 @@ public class ArticleNewPage extends Action {
 		scrollUpPage();
 	}
 	
-//	public void imageInsert(String title) {
-//		focus(readElement(Elements.ArticlesNewPage.ifImage));
-//		click(readElement(Elements.ArticlesNewPage.ifImage));
-//		focus(readElement(Elements.ArticlesNewPage.ifImage));
-//		click(readElement(Elements.ArticlesNewPage.ifImage));
-//		swithTo.frame(readElement(Elements.ArticlesNewPage.ifImage));
-//		
-//		swithTo.Default();
-//		
-//		focus(readElement(Elements.ArticlesNewPage.ifImage));
-//		click(readElement(Elements.ArticlesNewPage.ifImage));
-//		focus(readElement(Elements.ArticlesNewPage.ifImage));
-//		click(readElement(Elements.ArticlesNewPage.ifImage));
-//		swithTo.frame(readElement(Elements.ArticlesNewPage.ifImage));
-//
-//		
-//		focus(readElement(Elements.ArticlesNewPage.fsUpload));
-//		swithTo.frame(readElement(Elements.ArticlesNewPage.fsUpload));
-//		
-//		click(readElement(Elements.ArticlesNewPage.selectImage,title));
-//		swithTo.Default();
-//	}
-	
 	/**
 	 * click button insert after click image
 	 */
 	public void clickBtnInsert() {
-		focus( readElementAtArticlesNewPage(Interfaces.ArticlesNewPage.iframeImageName));
-		switchToFrame( readElementAtArticlesNewPage(Interfaces.ArticlesNewPage.iframeImageName));
+		focus(readElementAtArticlesNewPage(Interfaces.ArticlesNewPage.iframeImageName));
+		switchToFrame(readElementAtArticlesNewPage(Interfaces.ArticlesNewPage.iframeImageName));
 		
-		focus( readElementAtArticlesNewPage(Interfaces.ArticlesNewPage.btnInsert));
-		click( readElementAtArticlesNewPage(Interfaces.ArticlesNewPage.btnInsert));
+		focus(readElementAtArticlesNewPage(Interfaces.ArticlesNewPage.btnInsert));
+		click(readElementAtArticlesNewPage(Interfaces.ArticlesNewPage.btnInsert));
 		switchBack();
 	}
 	

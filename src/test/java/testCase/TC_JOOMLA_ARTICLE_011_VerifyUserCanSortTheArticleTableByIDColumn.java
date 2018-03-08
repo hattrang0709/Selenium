@@ -57,13 +57,13 @@ public class TC_JOOMLA_ARTICLE_011_VerifyUserCanSortTheArticleTableByIDColumn ex
 	  Log.info("Step 6: Click on the Header link of ID column");
 	  article.clickHeaderID();
 	  
-	  Log.info(" Verify poit : Verify the articles is sorted by ID in ascending order");
+	  Log.info(" Verify point : Verify the articles is sorted by ID in ascending order");
 	  verifyTrue(article.checkIDIncreate());
 	  
 	  Log.info("Step 8: Click on the Header link of ID column");
 	  article.clickHeaderID();
 	  
-	  Log.info(" Verify poit : Verify the articles is sorted by ID in descending order");
+	  Log.info(" Verify point : Verify the articles is sorted by ID in descending order");
 	  verifyTrue(article.checkIDCreate());
   }
   

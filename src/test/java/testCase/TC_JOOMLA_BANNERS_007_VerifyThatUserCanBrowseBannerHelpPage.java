@@ -62,7 +62,7 @@ public class TC_JOOMLA_BANNERS_007_VerifyThatUserCanBrowseBannerHelpPage extends
 	  Log.info("Step 5: Click 'Help' button in the right top corner");
 	  banner.clickBtnHelp();
 	  
-	  Log.info(" Verify poit : 'Banner help' page appears");
+	  Log.info(" Verify point : 'Banner help' page appears");
 	  verifyTrue(banner.isHelpScreenDisplay());
 	  
   }

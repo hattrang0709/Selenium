@@ -96,8 +96,7 @@ public class BannersNewPage extends Action{
 	public void clickFiledStatus(String Status) {
 		click(readElementAtBannersNewPage(Interfaces.BannersNewPage.filedsDownListStatus, Status));
 	}
-	
-	
+
 	/**
 	 * enter Text box name Banners
 	 * @param Name

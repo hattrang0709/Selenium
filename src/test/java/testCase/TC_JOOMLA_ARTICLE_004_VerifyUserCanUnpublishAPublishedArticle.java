@@ -72,7 +72,7 @@ public class TC_JOOMLA_ARTICLE_004_VerifyUserCanUnpublishAPublishedArticle exten
 	  Log.info("Step 11: Click on 'Save & Close' icon of the top right toolbar");
 	  page.clickBtnSaveAndClose();
 	  
-	  Log.info(" Verify poit : the article is saved successfully");
+	  Log.info(" Verify point : the article is saved successfully");
 	  control.verifyTrue(article.messageSaveSuccessDisplay());
 	  control.verifyTrue(article.articleNameDisplay(Constant.tc004Article.Title));
 	  
@@ -82,7 +82,7 @@ public class TC_JOOMLA_ARTICLE_004_VerifyUserCanUnpublishAPublishedArticle exten
 	  Log.info("Step 14: Click on 'UnPublish' icon of the top right toolbar");
 	  article.clickBtnUnpublic();
 	  
-	  Log.info(" Verify poit : the article is saved successfully");
+	  Log.info(" Verify point : the article is saved successfully");
 	  verifyTrue(article.isUnPublicIconDisplay(Constant.tc004Article.Title));
 	  verifyTrue(article.isMessageArticleUnPublicDisplay());
 	  

@@ -69,7 +69,7 @@ public class TC_JOOMLA_ARTICLE_005_VerifyUserCanMoveAnArticleToTheArchive extend
 	  Log.info("Step 10: Click on 'Save & Close' icon of the top right toolbar");
 	  page.clickBtnSaveAndClose();
 	  
-	  Log.info(" Verify poit : Verify the article is saved successfully");
+	  Log.info(" Verify point : Verify the article is saved successfully");
 	  control.verifyTrue(article.messageSaveSuccessDisplay());
 	  control.verifyTrue(article.articleNameDisplay(Constant.tc005Article.Title));
 	  
@@ -79,13 +79,13 @@ public class TC_JOOMLA_ARTICLE_005_VerifyUserCanMoveAnArticleToTheArchive extend
 	  Log.info("Step 13: Click on 'Archive' icon of the top right toolbar");
 	  article.clickBtnArchive();
 	  
-	  Log.info(" Verify poit : Verify the confirm message is displayed");
+	  Log.info(" Verify point : Verify the confirm message is displayed");
 	  verifyTrue(article.isMessageArticleArchivedDisplay());
 
 	  Log.info("Step 15: Select 'Archived' item of 'Status' dropdown list");
 	  article.selectFiliedOfSearchTools(Constant.tc005Article.Archived);
 	  
-	  Log.info(" Verify poit : Verify the archived article is displayed on the table grid");
+	  Log.info(" Verify point : Verify the archived article is displayed on the table grid");
 	  control.verifyTrue(article.articleNameDisplay(Constant.tc005Article.Title));
 	 
   }

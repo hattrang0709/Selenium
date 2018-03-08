@@ -23,7 +23,7 @@ public class TC_JOOMLA_ARTICLE_001_VerifyUserCanCreateNewArticleWithValidInforma
 	Logger Log = Logger.getLogger("TCLoginPage");
 	ArticlePage article = new ArticlePage();
 	ControlPanelPage control = new ControlPanelPage();
-	ArticleNewPage page = new ArticleNewPage();
+	ArticleNewPage newArticle = new ArticleNewPage();
 	
 	
   @BeforeMethod
@@ -34,7 +34,6 @@ public class TC_JOOMLA_ARTICLE_001_VerifyUserCanCreateNewArticleWithValidInforma
 	  configure.setUp(browser,timeout,url);
 	  login = new LoginPage();
 	  home = new HomePage();
-	  //Configure.waitPageLoad(Integer.parseInt(timeOutElement));
   }
   
   @Test
@@ -58,19 +57,18 @@ public class TC_JOOMLA_ARTICLE_001_VerifyUserCanCreateNewArticleWithValidInforma
 	  article.clickBtnNew();
 	  
 	  Log.info("Step 7: Enter a title on 'Title' text field");
-	  page.enterTitle(Constant.tc001Article.Title);
+	  newArticle.enterTitle(Constant.tc001Article.Title);
 	  
 	  Log.info("Step 8: Select an item from the 'Category' dropdown list");
-	  page.selectCategoryInCategory(Constant.tc001Article.Category);
+	  newArticle.selectCategoryInCategory(Constant.tc001Article.Category);
 	    
 	  Log.info("Step 9: Enter value on 'Article Text' text area");
-	  page.enterAtArticleText(Constant.tc001Article.Content);
+	  newArticle.enterAtArticleText(Constant.tc001Article.Content);
 	  
 	  Log.info("Step 10: Click on 'Save & Close' icon of the top right toolbar");
-	  page.clickBtnSaveAndClose();
+	  newArticle.clickBtnSaveAndClose();
 	  
-	  Log.info(" Verify poit : The article is saved successfully");
-	  //System.out.println(article.messageSaveSuccessDisplay());
+	  Log.info(" Verify point : The article is saved successfully");
 	  verifyTrue(article.messageSaveSuccessDisplay());
 	  verifyTrue(article.articleNameDisplay(Constant.tc001Article.Title));
   }

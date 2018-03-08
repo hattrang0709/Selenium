@@ -75,7 +75,7 @@ public class TC_JOOMLA_BANNERS_002_VerifyThatUserCanEditABanner extends Action {
 	  Log.info("Step 9: Click 'Save & Close' button");
 	  newClients.clickBtnSaveAndClose();
 	  
-	  Log.info(" Verify poit : A message : 'Client successfully saved' shows and new client is created");
+	  Log.info(" Verify point : A message : 'Client successfully saved' shows and new client is created");
 	  verifyTrue(clients.checkMessageSavedSuccessfully());
 	  verifyTrue(clients.checkClientsCreated(Constant.tc002Banners.ClientsName));
 	  
@@ -91,7 +91,7 @@ public class TC_JOOMLA_BANNERS_002_VerifyThatUserCanEditABanner extends Action {
 	  Log.info("Step 14: Click 'Save & Close' button");
 	  newCategories.clickBtnSaveAndClose();
 	  
-	  Log.info(" Verify poit : A message : 'Client successfully saved' shows and new client is created");
+	  Log.info(" Verify point : A message : 'Client successfully saved' shows and new client is created");
 	  verifyTrue(categories.checkMessageSavedSuccessfully());
 	  verifyTrue(categories.checkCategoriesCreated(Constant.tc002Banners.CategoryName));
 	  
@@ -117,7 +117,7 @@ public class TC_JOOMLA_BANNERS_002_VerifyThatUserCanEditABanner extends Action {
 	  Log.info("Step 22: Click 'Save' button");
 	  newBanners.clickBtnSave();
 	  
-	  Log.info(" Verify poit : A message : 'Banners successfully saved' shows and new Banners is created");
+	  Log.info(" Verify point : A message : 'Banners successfully saved' shows and new Banners is created");
 	  System.out.println(newBanners.checkAtBannersNewPage());
 	  verifyTrue(newBanners.checkMessageSavedSuccessfully());
 	  verifyTrue(newBanners.checkAtBannersNewPage());
@@ -128,7 +128,7 @@ public class TC_JOOMLA_BANNERS_002_VerifyThatUserCanEditABanner extends Action {
 	  Log.info("Step 15: Click 'Save & Close' button");
 	  newCategories.clickBtnSaveAndClose();
 	  
-	  Log.info(" Verify poit : A message : 'Banners successfully saved' shows and new Banners is created");
+	  Log.info(" Verify point : A message : 'Banners successfully saved' shows and new Banners is created");
 	  verifyTrue(banner.checkMessageSavedSuccessfully());
 	  verifyTrue(banner.checkBannersCreated(Constant.tc002Banners.BannersName2));
   }

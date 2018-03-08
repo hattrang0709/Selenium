@@ -75,7 +75,7 @@ public class TC_JOOMLA_BANNERS_003_VerifyThatUserCanCreateANewBannerWithUnpublis
 	  Log.info("Step 9: Click 'Save & Close' button");
 	  newClients.clickBtnSaveAndClose();
 	  
-	  Log.info(" Verify poit : A message : 'Client successfully saved' shows and new client is created");
+	  Log.info(" Verify point : A message : 'Client successfully saved' shows and new client is created");
 	  verifyTrue(clients.checkMessageSavedSuccessfully());
 	  verifyTrue(clients.checkClientsCreated(Constant.tc003Banners.ClientsName));
 	  
@@ -91,7 +91,7 @@ public class TC_JOOMLA_BANNERS_003_VerifyThatUserCanCreateANewBannerWithUnpublis
 	  Log.info("Step 14: Click 'Save & Close' button");
 	  newCategories.clickBtnSaveAndClose();
 	  
-	  Log.info(" Verify poit : A message : 'Client successfully saved' shows and new client is created");
+	  Log.info(" Verify point : A message : 'Client successfully saved' shows and new client is created");
 	  verifyTrue(categories.checkMessageSavedSuccessfully());
 	  verifyTrue(categories.checkCategoriesCreated(Constant.tc003Banners.CategoryName));
 	  
@@ -118,7 +118,7 @@ public class TC_JOOMLA_BANNERS_003_VerifyThatUserCanCreateANewBannerWithUnpublis
 	  Log.info("Step 22: Click 'Save & Close' button");
 	  newBanners.clickBtnSaveAndClose();
 	  
-	  Log.info(" Verify poit : A message : 'Banners successfully saved' shows and new Banners is created");
+	  Log.info(" Verify point : A message : 'Banners successfully saved' shows and new Banners is created");
 	  verifyTrue(banner.checkMessageSavedSuccessfully());
 	  verifyTrue(banner.checkBannersCreated(Constant.tc003Banners.BannersName, Constant.tc003Banners.CategoryName, Constant.tc003Banners.ClientsName,Constant.tc003Banners.StatusIcon ));
 	  

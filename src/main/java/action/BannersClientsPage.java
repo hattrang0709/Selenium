@@ -47,40 +47,37 @@ public class BannersClientsPage extends Action{
 		return r;
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	public void enterTxtSearch(String Name) {
+	/**
+	 * enter text box search
+	 * @param Name
+	 */
+	public void enterTxbSearch(String Name) {
 		sendkey(readElementAtBannersClientsPage(Interfaces.BannersClientsPage.txbSearch), Name);
 	}
 	
-	
-	
-	
-	
-	
+	/**
+	 * select number display
+	 * @param Number
+	 */
 	public void selectNumberDisplay(String Number) {
 		click(readElementAtBannersClientsPage(Interfaces.BannersClientsPage.dlNumberDisplay, Number));
 	}
 	
-	
-	
-	
-	
-	
+	/**
+	 * check clients created
+	 * @param Name
+	 * @return
+	 */
 	public boolean checkClientsCreated(String Name) {
-		enterTxtSearch(Name);
+		enterTxbSearch(Name);
 		clickIconSearch();
 		return isElementDisplay(readElementAtBannersClientsPage(Interfaces.BannersClientsPage.txtNameClientDisplay, Name));
 	}
+	
+	/**
+	 * check message 
+	 * @return
+	 */
 	public boolean checkMessageSavedSuccessfully() {
 		String text = getText(readElementAtBannersClientsPage(Interfaces.BannersClientsPage.txtMessage));
 		if(text.equals(Interfaces.BannersClientsPage.messageSavedClients)) {

@@ -78,7 +78,7 @@ public class TC_JOOMLA_ARTICLE_013_VerifyUserCanAddImageToArticleContent extends
 	  Log.info("Step 13: Click on 'Save & Close' icon of the top right toolbar");
 	  page.clickBtnSaveAndClose();
 	  
-	  Log.info(" Verify poit : the article is saved successfully");
+	  Log.info(" Verify point : the article is saved successfully");
 	  verifyTrue(article.messageSaveSuccessDisplay());
 	  verifyTrue(article.articleNameDisplay(Constant.tc013Article.Title));
   }

@@ -47,3 +47,13 @@ test{
      }
 }
 
+task chrome(type: Test) {
+	useTestNG() {
+        suites 'src/test/java/test_run/testngArticle.xml'
+    }
+    maxParallelForks=1
+    onOutput { descriptor, event ->
+        logger.lifecycle(event.message )
+     }
+}
+

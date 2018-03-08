@@ -510,8 +510,6 @@ public class ArticlePage extends Action{
 				b = count +1;
 				if(b-a>=1) {
 					result= true;
-					System.out.println(""+i);
-					System.out.println(result);
 					i++;
 				}
 				else {
@@ -537,12 +535,9 @@ public class ArticlePage extends Action{
 			int b = count -1;
 			if(a-b>=1){
 				result= true;
-				System.out.println(""+i);
-				System.out.println(result);
 				i++;
 			}
 			else {
-				System.out.println("123");
 				result = false;
 				break;
 				}
@@ -566,18 +561,18 @@ public class ArticlePage extends Action{
 	 * @return
 	 */
 	public boolean checkNumberArticle(String Number) {
-		int num = count( readElementAtArticlesPage(Interfaces.ArticlesPage.numberRow));
 		int number= Integer.parseInt(Number);
-		boolean result = true;
-		if(num>number && isElementDisplay(readElementAtArticlesPage(Interfaces.ArticlesPage.iconNextPage)) == false) {
-			result=  false;
-		}
-		else {
-			if(num == number && isElementDisplay(readElementAtArticlesPage(Interfaces.ArticlesPage.iconNextPage))== true) {
-				result= true;
+		boolean result = false;
+		while(isElementDisplay(readElementAtArticlesPage(Interfaces.ArticlesPage.iconNextPage)) == true) {
+			int num = count(readElementAtArticlesPage(Interfaces.ArticlesPage.numberRow));
+			if(num == number) {
+				result = true;
+				click(readElementAtArticlesPage(Interfaces.ArticlesPage.iconNextPage));
 			}
-			if(num<number && isElementDisplay(readElementAtArticlesPage(Interfaces.ArticlesPage.iconNextPage))== false)
+			if(num<number ) {
 				result= true;
+				break;
+			}
 		}	
 		return result;
 	}
@@ -597,14 +592,14 @@ public class ArticlePage extends Action{
 	 * click icon ordering
 	 */
 	public void clickIconOrdering() {
-		click( readElementAtArticlesPage(Interfaces.ArticlesPage.iconOrdering));
+		click(readElementAtArticlesPage(Interfaces.ArticlesPage.iconOrdering));
 	}
 	
 	/**
 	 * click icon down ordering after click icon ordering
 	 */
 	public void clickIconDownOrdering() {
-		click( readElementAtArticlesPage(Interfaces.ArticlesPage.iconOrdering));
+		click(readElementAtArticlesPage(Interfaces.ArticlesPage.iconOrdering));
 	}
 	
 	/**

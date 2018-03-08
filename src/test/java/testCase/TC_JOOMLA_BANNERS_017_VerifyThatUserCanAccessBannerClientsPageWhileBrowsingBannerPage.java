@@ -36,8 +36,9 @@ public class TC_JOOMLA_BANNERS_017_VerifyThatUserCanAccessBannerClientsPageWhile
 	BannersEditPage editBanners = new BannersEditPage();
 	
 	
-  @BeforeMethod
+  
   @Parameters({"browser","timeout","url"})
+  @BeforeMethod
   public void beforeMethod(String browser, String timeout, String url) {
 	  configure = new Configure();
 	  Reporter.log("Browser Opened");
@@ -64,7 +65,7 @@ public class TC_JOOMLA_BANNERS_017_VerifyThatUserCanAccessBannerClientsPageWhile
 	  Log.info("Step 5: Click 'Clients' link in the left top ");
 	  banner.clickMenuLeftClient();
 	  
-	  Log.info(" Verify poit : 'Client' page displays");
+	  Log.info(" Verify point : 'Client' page displays");
 	  verifyTrue(clients.isClientScreenDisplay());
 	  
   }

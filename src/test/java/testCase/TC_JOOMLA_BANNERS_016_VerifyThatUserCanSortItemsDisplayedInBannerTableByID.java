@@ -70,7 +70,7 @@ public class TC_JOOMLA_BANNERS_016_VerifyThatUserCanSortItemsDisplayedInBannerTa
 	  Log.info("Step 7: Click 'ID' link in the top of table");
 	  banner.clickHeaderID();
 	  
-	  Log.info(" Verify poit : Items are sorted descending by ID in banner table");
+	  Log.info(" Verify point : Items are sorted descending by ID in banner table");
 	  verifyTrue(banner.checkIDCreate());
 
   }

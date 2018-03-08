@@ -57,13 +57,13 @@ public class TC_JOOMLA_ARTICLE_012_VerifyUserCanPagingTheArticlesUsingThePagingC
 	  Log.info("Step 6: Select '5' item of the 'Display' dropdown list at the footer section of the article table");
 	  article.selectNumberArticle(Constant.tc012Article.Five);
 	  
-	  Log.info(" Verify poit : Verify the articles is sorted by ID in ascending order");
+	  Log.info(" Verify point : Verify the articles is sorted by ID in ascending order");
 	  verifyTrue(article.checkNumberArticle(Constant.tc012Article.Five));
 	  
 	  Log.info("Step 6: Select 'All' item of the 'Display' dropdown list at the footer section of the article table");
 	  article.selectNumberArticle(Constant.tc012Article.All);;
 	  
-	  Log.info(" Verify poit : the article is saved successfully");
+	  Log.info(" Verify point : the article is saved successfully");
 	  verifyTrue(article.checkAllArticle());
   }
   

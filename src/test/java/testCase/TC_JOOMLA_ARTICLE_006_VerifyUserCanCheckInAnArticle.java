@@ -71,7 +71,7 @@ public class TC_JOOMLA_ARTICLE_006_VerifyUserCanCheckInAnArticle extends Action 
 	  Log.info("Step 11: Click on 'Save' icon of the top right toolbar");
 	  page.clickBtnSave();
 	  
-	  Log.info(" Verify poit : the article is saved successfully");
+	  Log.info(" Verify point : the article is saved successfully");
 	  verifyTrue(page.messageSaveSuccessDisplay());
 
 	  Log.info("Step 13: Close the browser window");
@@ -102,7 +102,7 @@ public class TC_JOOMLA_ARTICLE_006_VerifyUserCanCheckInAnArticle extends Action 
 	  Log.info("Step 20: Click on 'Check-in' icon of the top right toolbar");
 	  article.clickBtnCheckin();
 	  
-	  Log.info(" Verify poit : The article is saved successfully");
+	  Log.info(" Verify point : The article is saved successfully");
 	  verifyTrue(article.isMessageArticleCheckInDisplay());
 	  verifyTrue(article.checkIconLockNoDisplay(Constant.tc006Article.Title));
 

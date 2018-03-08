@@ -205,7 +205,6 @@ public class BannersPage extends Action {
 	public void enterTxbNumberDisplay(String Number) {
 		sendkey(readElementAtBannersPage(Interfaces.BannersPage.txbInputNumberDisplay), Number);
 		sendkey(readElementAtBannersPage(Interfaces.BannersPage.txbInputNumberDisplay), Keys.ENTER);
-		System.out.println(4);
 	}
 	
 	/**
@@ -426,24 +425,28 @@ public class BannersPage extends Action {
 		return isElementDisplay(readElementAtBannersPage(Interfaces.BannersPage.checkIconLock, Name));
 	}
 	
+	public void clickIconNextPage() {
+		click(readElementAtBannersPage(Interfaces.BannersPage.iconNextPage));
+	}
+	
 	/**
 	 * check number banners at 1 page
 	 * @param Number
 	 * @return
 	 */
 	public boolean checkNumberBanners(String Number) {
-		int num = count(readElementAtBannersPage(Interfaces.BannersPage.numberRow));
 		int number= Integer.parseInt(Number);
-		boolean result = true;
-		if(num>number && isElementDisplay(readElementAtBannersPage(Interfaces.BannersPage.iconNextPage)) == false) {
-			result=  false;
-		}
-		else {
-			if(num == number && isElementDisplay(readElementAtBannersPage(Interfaces.BannersPage.iconNextPage))== true) {
-				result= true;
+		boolean result = false;
+		while(isElementDisplay(readElementAtBannersPage(Interfaces.BannersPage.iconNextPage)) == true) {
+			int num = count(readElementAtBannersPage(Interfaces.BannersPage.numberRow));
+			if(num == number) {
+				result = true;
+				click(readElementAtBannersPage(Interfaces.BannersPage.iconNextPage));
 			}
-			if(num<number && isElementDisplay(readElementAtBannersPage(Interfaces.BannersPage.iconNextPage))== false)
+			if(num<number ) {
 				result= true;
+				break;
+			}
 		}	
 		return result;
 	}

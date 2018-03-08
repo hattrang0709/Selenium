@@ -303,7 +303,7 @@ public class Constant {
 		public static final String ContactEmail          = "John@gmail.com";
 		public static final String CategoryName          = "Category Test " + System.currentTimeMillis();
 		public static final String BannersName           = "Banner Test " + System.currentTimeMillis();
-		public static final String BannersName2           = "Banner Test 2" + System.currentTimeMillis();
+		public static final String BannersName2          = "Banner Test 2" + System.currentTimeMillis();
 		public static final String tab                   = "Banner Details";
 		public static final String StatusFiled           = "Unpublished";
 		public static final String StatusIcon            = "unpublish";

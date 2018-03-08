@@ -72,7 +72,7 @@ public class TC_JOOMLA_ARTICLE_016_VerifyUseCanChangeTheFeaturePropertyOfArticle
 	  Log.info("Step 11: Click on 'Save & Close' icon of the top right toolbar");
 	  page.clickBtnSaveAndClose();
 	  
-	  Log.info(" Verify poit : the article is saved successfully");
+	  Log.info(" Verify point : the article is saved successfully");
 	  control.verifyTrue(article.messageSaveSuccessDisplay());
 	  control.verifyTrue(article.articleNameDisplay(Constant.tc016Article.Title));
 	  
@@ -82,7 +82,7 @@ public class TC_JOOMLA_ARTICLE_016_VerifyUseCanChangeTheFeaturePropertyOfArticle
 	  Log.info("Step 14: Click on the status icon of the selected article in the Featured column");
 	  article.clickIconUnFeature(Constant.tc016Article.Title);
 	  
-	  Log.info(" Verify poit : Verify the article is unfeatured successfully");
+	  Log.info(" Verify point : Verify the article is unfeatured successfully");
 	  verifyTrue(article.isIconFeaturedDisplay(Constant.tc016Article.Title));
 	  verifyTrue(article.isMessageArticleFeaturedDisplay());
 	  
@@ -92,7 +92,7 @@ public class TC_JOOMLA_ARTICLE_016_VerifyUseCanChangeTheFeaturePropertyOfArticle
 	  Log.info("Step 17: Click on the status icon of the selected article in the Featured column");
 	  article.clickIconFeature(Constant.tc016Article.Title);
 	  
-	  Log.info(" Verify poit : Verify the article is featured successfully");
+	  Log.info(" Verify point : Verify the article is featured successfully");
 	  verifyTrue(article.isIconUnFeaturedDisplay(Constant.tc016Article.Title));
 	  verifyTrue(article.isMessageArticleUnFeaturedDisplay());
   }

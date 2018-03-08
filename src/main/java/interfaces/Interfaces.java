@@ -3,61 +3,60 @@ package interfaces;
 public class Interfaces {
 
 	public class ArticlesNewPage{
-		// xpath
 		public static final String txtArticle                    = "txtArticle";
-		public static final String txtTitle                    = "txtTitle";
-		public static final String lbCategory                  = "lbCategory";
-		public static final String txtTextArticle              = "txtTextArticle";
-		public static final String iframeTxbArticle            = "iframeTxbArticle" ;
-		public static final String filesInCategory             = "filesInCategory" ;
-		public static final String btnSave                     = "btnSave" ;
-		public static final String filedInDownListCateory      = "filedInDownListCateory" ;
-		public static final String lbStatus                    = "lbStatus" ;
-		public static final String filedInDownListStatus       = "filedInDownListStatus" ;
-		public static final String txtMassageSuccess           = "txtMassageSuccess" ;
-		public static final String lbAccess                    = "lbAccess" ;
-		public static final String filedInDownListAccess       = "filedInDownListAccess" ;
-		public static final String iframeImageName             = "iframeImageName" ;
-		public static final String iframeImageName2            = "iframeImageName2" ;
-		public static final String imageName                   = "imageName" ;
-		public static final String btnInsert                   = "btnInsert" ;
-		public static final String txtMassage                   = "txtMassage" ;
-		public static final String menuTextArticle             = "menuTextArticle" ;
-		public static final String menuNewArticle              = "menuNewArticle" ;
+		public static final String txtTitle                      = "txtTitle";
+		public static final String lbCategory                    = "lbCategory";
+		public static final String txtTextArticle                = "txtTextArticle";
+		public static final String iframeTxbArticle              = "iframeTxbArticle" ;
+		public static final String filesInCategory               = "filesInCategory" ;
+		public static final String btnSave                       = "btnSave" ;
+		public static final String filedInDownListCateory        = "filedInDownListCateory" ;
+		public static final String lbStatus                      = "lbStatus" ;
+		public static final String filedInDownListStatus         = "filedInDownListStatus" ;
+		public static final String txtMassageSuccess             = "txtMassageSuccess" ;
+		public static final String lbAccess                      = "lbAccess" ;
+		public static final String filedInDownListAccess         = "filedInDownListAccess" ;
+		public static final String iframeImageName               = "iframeImageName" ;
+		public static final String iframeImageName2              = "iframeImageName2" ;
+		public static final String imageName                     = "imageName" ;
+		public static final String btnInsert                     = "btnInsert" ;
+		public static final String txtMassage                    = "txtMassage" ;
+		public static final String menuTextArticle               = "menuTextArticle" ;
+		public static final String menuNewArticle                = "menuNewArticle" ;
+		public static final String txbInputTitle                 = "txbInputTitle" ;
 		
-		// fill {0}
-		public static final String btnSaveAndClose             = "Save & Close";
-		public static final String btnSaveAndNew               = "Save & New";
-		public static final String btnClose                    = "Close";
-		public static final String txtMessageSave              = "Article saved.";
+		
+		public static final String btnSaveAndClose               = "Save & Close";
+		public static final String btnSaveAndNew                 = "Save & New";
+		public static final String btnClose                      = "Close";
+		public static final String txtMessageSave                = "Article saved.";
 	}
 	
 	public class ArticlesPage{
-		//xpath
-		public static final String menuManageArticle           = "menuManageArticle" ;
-		public static final String btnNew                      = "btnNew" ;
-		public static final String txbSearch                   = "txbSearch" ;
-		public static final String btnSearch                   = "btnSearch" ;
-		public static final String btnClear                    = "btnClear" ;
-		public static final String lbIdDescending              = "lbIdDescending" ;
-		public static final String txbIdDescending             = "txbIdDescending" ;
-		public static final String txtMessageSuccess           = "txtMessageSuccess" ;
-		public static final String txtNameDislays              = "txtNameDislays";
-		public static final String btnNextDisable              = "btnNextDisable";
-		public static final String btnSearchTools              = "btnSearchTools";
-		public static final String filedSelectOfSearchTools    = "filedSelectOfSearchTools";
-		public static final String boxCheckboxAll              = "boxCheckboxAll";
-		public static final String filedOfSelectStatus         ="filedOfSelectStatus" ;
-		public static final String iconPublish                 = "iconPublish" ;
-		public static final String iconUnpublish               = "iconUnpublish" ;
-		public static final String iconLock                    = "iconLock" ;
-		public static final String txtTitleHelpPage            = "txtTitleHelpPage" ;
-		public static final String filterSelectStatusOfSearchTools         ="filterSelectStatusOfSearchTools" ;
-		public static final String filterFiledDownList        = "filterFiledDownList" ;
-		public static final String filterEnterFiledSearchTools          = "filterEnterFiledSearchTools" ;
-		public static final String txtHeaderID          = "txtHeaderID" ;
-		public static final String checkIconPublish                 = "checkIconPublish" ;
-		public static final String checkNameCategory      = "checkNameCategory" ;
+		public static final String menuManageArticle             = "menuManageArticle" ;
+		public static final String btnNew                        = "btnNew" ;
+		public static final String txbSearch                     = "txbSearch" ;
+		public static final String btnSearch                     = "btnSearch" ;
+		public static final String btnClear                      = "btnClear" ;
+		public static final String lbIdDescending                = "lbIdDescending" ;
+		public static final String txbIdDescending               = "txbIdDescending" ;
+		public static final String txtMessageSuccess             = "txtMessageSuccess" ;
+		public static final String txtNameDislays                = "txtNameDislays";
+		public static final String btnNextDisable                = "btnNextDisable";
+		public static final String btnSearchTools                = "btnSearchTools";
+		public static final String filedSelectOfSearchTools      = "filedSelectOfSearchTools";
+		public static final String boxCheckboxAll                = "boxCheckboxAll";
+		public static final String filedOfSelectStatus           ="filedOfSelectStatus" ;
+		public static final String iconPublish                   = "iconPublish" ;
+		public static final String iconUnpublish                 = "iconUnpublish" ;
+		public static final String iconLock                      = "iconLock" ;
+		public static final String txtTitleHelpPage              = "txtTitleHelpPage" ;
+		public static final String filterSelectStatusOfSearchTools="filterSelectStatusOfSearchTools" ;
+		public static final String filterFiledDownList           = "filterFiledDownList" ;
+		public static final String filterEnterFiledSearchTools   = "filterEnterFiledSearchTools" ;
+		public static final String txtHeaderID                   = "txtHeaderID" ;
+		public static final String checkIconPublish              = "checkIconPublish" ;
+		public static final String checkNameCategory             = "checkNameCategory" ;
 		public static final String checkNameAccess      = "checkNameAccess" ;
 		public static final String checkNameAuthor             = "checkNameAuthor" ;
 		public static final String numberRow                = "numberRow" ;
@@ -76,7 +75,6 @@ public class Interfaces {
 		public static final String txtMessage                  = "txtMessage";
 		
 		
-		// fill {0}
 		public static final String btnEdit                  = "btnEdit" ;
 		public static final String messageSave              = "Article saved.";
 		public static final String messageArticleUnpublish  = "1 article unpublished.";
@@ -100,12 +98,12 @@ public class Interfaces {
 	}
 	
 	public class ControlPanelPage{
-		//xpath
+
 		public static final String menuControlPanel          = "menuControlPanel" ;
 		public static final String dlMenu                    = "dlMenu" ;
 		public static final String menuLeft                  = "menuLeft" ;
 		public static final String menuLeft1                 = "menuLeft1" ;
-		// fill{0}
+
 		public static final String contentMenu               = "Content" ;
 		public static final String article                   = "Articles" ;
 		public static final String addBanner                 = "addBanner" ;

@@ -76,7 +76,7 @@ public class TC_JOOMLA_BANNERS_014_VerifyThatUserCannotCreateANewBannerWithoutEn
 	  Log.info("Step 9: Click 'Save & Close' button");
 	  newClients.clickBtnSaveAndClose();
 	  
-	  Log.info(" Verify poit : A message : 'Client successfully saved' shows and new client is created");
+	  Log.info(" Verify point : A message : 'Client successfully saved' shows and new client is created");
 	  verifyTrue(clients.checkMessageSavedSuccessfully());
 	  verifyTrue(clients.checkClientsCreated(Constant.tc014Banners.ClientsName));
 	  
@@ -92,7 +92,7 @@ public class TC_JOOMLA_BANNERS_014_VerifyThatUserCannotCreateANewBannerWithoutEn
 	  Log.info("Step 14: Click 'Save & Close' button");
 	  newCategories.clickBtnSaveAndClose();
 	  
-	  Log.info(" Verify poit : A message : 'Client successfully saved' shows and new client is created");
+	  Log.info(" Verify point : A message : 'Client successfully saved' shows and new client is created");
 	  verifyTrue(categories.checkMessageSavedSuccessfully());
 	  verifyTrue(categories.checkCategoriesCreated(Constant.tc014Banners.CategoryName));
 	  
@@ -112,9 +112,9 @@ public class TC_JOOMLA_BANNERS_014_VerifyThatUserCannotCreateANewBannerWithoutEn
 	  Log.info("Step 20: Click 'Save & Close' button");
 	  newBanners.clickBtnSaveAndClose();
 	  
-	  Log.info(" Verify poit : The color of Name textbox changes to red");
+	  Log.info(" Verify point : The color of Name textbox changes to red");
 	  verifyTrue(newBanners.checkRedTxbName());
-	  Log.info(" Verify poit : New banner is not created");
+	  Log.info(" Verify point : New banner is not created");
 	  System.out.println(newBanners.checkMessageNotSavedSuccessfully());
 	  //verifyFalse(banner.checkMessageNotSavedSuccessfully());
 	  

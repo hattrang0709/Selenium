@@ -72,7 +72,7 @@ public class TC_JOOMLA_ARTICLE_007_VerifyUserCanMoveAnArticleToTrashSection exte
 	  Log.info("Step 11: Click on 'Save & Close' icon of the top right toolbar");
 	  page.clickBtnSaveAndClose();
 	  
-	  Log.info(" Verify poit : Verify the article is saved successfully");
+	  Log.info(" Verify point : Verify the article is saved successfully");
 	  control.verifyTrue(article.messageSaveSuccessDisplay());
 	  control.verifyTrue(article.articleNameDisplay(Constant.tc007Article.Title));
 	  
@@ -82,13 +82,13 @@ public class TC_JOOMLA_ARTICLE_007_VerifyUserCanMoveAnArticleToTrashSection exte
 	  Log.info("Step 13: Click on 'Trash' icon of the top right toolbar");
 	  article.clickBtnTrash();
 	  
-	  Log.info(" Verify poit : Verify the confirm message is displayed");
+	  Log.info(" Verify point : Verify the confirm message is displayed");
 	  verifyTrue(article.isMessageArticleTrashDisplay());
 
 	  Log.info("Step 15: Select 'Trash' item of 'Status' dropdown list");
 	  article.selectFiliedOfSearchTools(Constant.tc007Article.Trash);
 	  
-	  Log.info(" Verify poit : Verify the archived article is displayed on the table grid");
+	  Log.info(" Verify point : Verify the archived article is displayed on the table grid");
 	  control.verifyTrue(article.articleNameDisplay(Constant.tc007Article.Title));
 	 
   }

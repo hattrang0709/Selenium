@@ -26,7 +26,6 @@ public class BannersCategoriesPage extends Action{
 	 * click button new
 	 */
 	public void clickBtnNew() {
-		System.out.println(readElementAtCategoriesPage(Interfaces.BannersCategoriesPage.btnMenuTop));
 		click(readElementAtCategoriesPage(Interfaces.BannersCategoriesPage.btnMenuTop, Interfaces.BannersCategoriesPage.btnNew));
 	}
 	/**
@@ -36,13 +35,6 @@ public class BannersCategoriesPage extends Action{
 		click(readElementAtCategoriesPage(Interfaces.BannersClientsPage.txbNumberDisplay));
 	}
 	
-	
-	
-	
-	
-	
-	
-	
 	/**
 	 * enter text box search
 	 * @param Name
@@ -51,11 +43,6 @@ public class BannersCategoriesPage extends Action{
 		sendkey(readElementAtCategoriesPage(Interfaces.BannersCategoriesPage.txbSearch), Name);
 	}
 	
-	
-	
-	
-	
-	
 	/**
 	 * select text box number display 
 	 * @param Number
@@ -63,10 +50,6 @@ public class BannersCategoriesPage extends Action{
 	public void selectTxbNumberDisplay(String Number) {
 		click(readElementAtCategoriesPage(Interfaces.BannersCategoriesPage.dlNumberDisplay, Number));
 	}
-	
-	
-	
-	
 	
 	/**
 	 * check categori created

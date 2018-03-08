@@ -27,14 +27,14 @@ public class Configure  {
 	
 	/**
 	 * Read xml File
-	 * @param filePath
+	 * @param Path
 	 * @return file
 	 */
-	public Document readXmlFile(String filePath) {
+	public Document readXmlFile(String Path) {
 		try {
-			File configFile=new File(filePath);
+			File configFile=new File(Path);
 			DocumentBuilderFactory dFactory=DocumentBuilderFactory.newInstance();//create a object 'DocumentBuilderFactory' from mothod its
-			DocumentBuilder dBuilder=dFactory.newDocumentBuilder();// Sét đặt việc kiểm tra tính hợp lệ của tài liệu sẽ phân tích sau này
+			DocumentBuilder dBuilder=dFactory.newDocumentBuilder();
 			return dBuilder.parse(configFile);
 		}
 		catch (Exception e) {
@@ -48,9 +48,10 @@ public class Configure  {
 	 * @return
 	 */
 	public String readConfig(String tag) {
-		Document configFile=readXmlFile("src/main/java/interfaces/HomePage.xml");// Lay ra nut Document (mo ta toan bo tai lieu xml cua file .xml
+		Document configFile=readXmlFile("src/main/java/interfaces/HomePage.xml");
 		return configFile.getElementsByTagName(tag).item(0).getTextContent();
 	}
+	
 	//Read browser from xml file
 	public String readBrowser() {
 		switch(readConfig("browser")) {
